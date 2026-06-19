@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Образовательный сайт по математике для 6 класса. Изучение обыкновенных дробей: теория, примеры, тесты.">
+    <meta name="keywords" content="математика, дроби, 6 класс, обучение, образование">
+    <title>Обыкновенные дроби - Математика 6 класс</title>
+    <link rel="stylesheet" href="дроби.css">
+    
+    <!-- Подключение MathJax для красивого отображения формул -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- Skip Navigation для пользователей скринридеров -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+
+    <div class="container">
+
+        <header role="banner">
+            <h1>Обыкновенные дроби</h1>
+            <nav role="navigation" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="#intro">Главная</a></li>
+                    <li><a href="#theory">Теория</a></li>
+                    <li><a href="#actions">Действия</a></li>
+                    <li><a href="#examples">Примеры</a></li>
+                    <li><a href="#test">Тест</a></li>
+                    <li><a href="#facts">Факты</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" role="main">
+            <!-- РАЗДЕЛ 1: ВВЕДЕНИЕ -->
+            <section id="intro" aria-labelledby="intro-heading">
+                <h2 id="intro-heading">Введение в тему</h2>
+                <p>Изучение обыкновенных дробей необходимо для понимания того, как целое делится на части. Эти знания применяются в повседневной жизни (например, в кулинарии, ремонте или покупках) и служат важнейшей основой для изучения алгебры в старших классах.</p>
+                
+                <figure>
+                    <img src="https://avatars.mds.yandex.net/i?id=b8da2a8628c828e1d3eafebec616c55b_l-5501397-images-thumbs&n=13" alt="Визуальное представление обыкновенных дробей в виде секторов круга, показывающее деление целого на равные части">
+                    <figcaption>Рисунок 1. Визуальное представление долей целого.</figcaption>
+                </figure>
+
+                <h3>Зачем нужны дроби?</h3>
+                <p>Представьте, что вы делите пиццу на 8 равных кусков и съедаете 3 из них. Как записать, какая часть пиццы осталась? Именно для таких случаев и были придуманы дроби!</p>
+                <ul>
+                    <li>🍕 <strong>Кулинария:</strong> \(\frac{1}{2}\) стакана сахара, \(\frac{1}{4}\) чайной ложки соли</li>
+                    <li>🛒 <strong>Покупки:</strong> \(\frac{3}{4}\) килограмма яблок</li>
+                    <li>⏰ <strong>Время:</strong> половина часа, четверть часа</li>
+                    <li>📏 <strong>Измерения:</strong> \(\frac{2}{3}\) метра ткани</li>
+                </ul>
+            </section>
+
+            <!-- РАЗДЕЛ 2: ТЕОРИЯ -->
+            <section id="theory" aria-labelledby="theory-heading">
+                <h2 id="theory-heading">Ключевые понятия</h2>
+                
+                <h3>Основная терминология</h3>
+                <p>Любая обыкновенная дробь записывается в виде \(\dfrac{a}{b}\), где:</p>
+                <ul>
+                    <li><strong>Числитель</strong> \(a\) — число, показывающее, сколько равных частей взято от целого (пишется над чертой).</li>
+                    <li><strong>Знаменатель</strong> \(b\) — число, показывающее, на сколько равных частей разделено целое (пишется под чертой).</li>
+                    <li><strong>Дробная черта</strong> — означает деление: \(\dfrac{a}{b} = a : b\).</li>
+                </ul>
+
+                <h3>Виды дробей</h3>
+                <ul>
+                    <li><strong>Правильная дробь</strong> — дробь, у которой числитель меньше знаменателя (она меньше единицы). Примеры: \(\dfrac{3}{5},\ \dfrac{2}{3},\ \dfrac{7}{8}\).</li>
+                    <li><strong>Неправильная дробь</strong> — дробь, у которой числитель больше или равен знаменателю (она больше или равна единице). Примеры: \(\dfrac{7}{3},\ \dfrac{5}{5},\ \dfrac{9}{4}\).</li>
+                    <li><strong>Смешанное число</strong> — число, состоящее из целой части и дробной. Пример: \(2\dfrac{1}{3},\ 5\dfrac{3}{4}\).</li>
+                </ul>
+
+                <h3>Сравнение дробей</h3>
+                <p>Чтобы сравнить две дроби, можно использовать несколько правил:</p>
+                <ol>
+                    <li><strong>Одинаковые знаменатели:</strong> больше та дробь, у которой числитель больше. Например: \(\dfrac{5}{7} > \dfrac{3}{7}\).</li>
+                    <li><strong>Одинаковые числители:</strong> больше та дробь, у которой знаменатель меньше. Например: \(\dfrac{3}{4} > \dfrac{3}{5}\).</li>
+                    <li><strong>Разные числители и знаменатели:</strong> нужно привести дроби к общему знаменателю и сравнить.</li>
+                </ol>
+
+                <h3>Основное свойство дроби</h3>
+                <p>Если числитель и знаменатель дроби умножить или разделить на одно и то же число (не равное нулю), то получится дробь, равная данной:</p>
+                <p class="formula">$$\frac{a}{b} = \frac{a \cdot k}{b \cdot k}, \quad \text{где } k \neq 0$$</p>
+                <p>Это свойство используется для <strong>приведения дробей к общему знаменателю</strong> и для <strong>сокращения дробей</strong>.</p>
+            </section>
+
+            <!-- РАЗДЕЛ 3: ДЕЙСТВИЯ С ДРОБЯМИ -->
+            <section class="cards-grid" id="actions" aria-labelledby="actions-heading">
+                <h2 id="actions-heading">Основные действия с дробями</h2>
+                
+                <div class="card" role="article">
+                    <h3>➕ Сложение и вычитание</h3>
+                    <p>Чтобы сложить или вычесть дроби с <strong>одинаковыми знаменателями</strong>, нужно сложить (вычесть) их числители, а знаменатель оставить без изменений:</p>
+                    <p class="formula">$$\frac{a}{c} \pm \frac{b}{c} = \frac{a \pm b}{c}$$</p>
+                    <p>Если <strong>знаменатели разные</strong>, сначала нужно привести дроби к общему знаменателю:</p>
+                    <p class="formula">$$\frac{a}{b} \pm \frac{c}{d} = \frac{a \cdot d \pm c \cdot b}{b \cdot d}$$</p>
+                </div>
+                
+                <div class="card" role="article">
+                    <h3>✖️ Умножение дробей</h3>
+                    <p>При умножении обыкновенных дробей числитель первой дроби умножается на числитель второй, а знаменатель первой — на знаменатель второй:</p>
+                    <p class="formula">$$\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}$$</p>
+                </div>
+                
+                <div class="card" role="article">
+                    <h3>➗ Деление дробей</h3>
+                    <p>Чтобы разделить одну дробь на другую, нужно первую дробь умножить на дробь, обратную второй (перевернуть вторую дробь):</p>
+                    <p class="formula">$$\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{a \cdot d}{b \cdot c}$$</p>
+                </div>
+            </section>
+
+            <!-- РАЗДЕЛ 4: ПРИМЕРЫ -->
+            <section id="examples" aria-labelledby="examples-heading">
+                <h2 id="examples-heading">Разбор примеров</h2>
+                
+                <div class="example">
+                    <h3>Пример 1. Сложение дробей с разными знаменателями</h3>
+                    <p><strong>Задача:</strong> Вычислите \(\dfrac{2}{3} + \dfrac{1}{4}\)</p>
+                    <p><strong>Решение:</strong></p>
+                    <ol>
+                        <li>Находим наименьший общий знаменатель (НОК чисел 3 и 4): \(НОК(3, 4) = 12\)</li>
+                        <li>Находим дополнительные множители: \(12 : 3 = 4\); \(12 : 4 = 3\)</li>
+                        <li>Умножаем числители на дополнительные множители: \(\dfrac{2}{3} = \dfrac{8}{12}\); \(\dfrac{1}{4} = \dfrac{3}{12}\)</li>
+                        <li>Складываем: \(\dfrac{8}{12} + \dfrac{3}{12} = \dfrac{11}{12}\)</li>
+                    </ol>
+                    <p><strong>Ответ:</strong> \(\dfrac{11}{12}\)</p>
+                </div>
+
+                <div class="example">
+                    <h3>Пример 2. Умножение дробей</h3>
+                    <p><strong>Задача:</strong> Вычислите \(\dfrac{2}{5} \cdot \dfrac{3}{4}\)</p>
+                    <p><strong>Решение:</strong></p>
+                    <ol>
+                        <li>Умножаем числители: \(2 \cdot 3 = 6\)</li>
+                        <li>Умножаем знаменатели: \(5 \cdot 4 = 20\)</li>
+                        <li>Получаем дробь: \(\dfrac{6}{20}\)</li>
+                        <li>Сокращаем на 2: \(\dfrac{6}{20} = \dfrac{3}{10}\)</li>
+                    </ol>
+                    <p><strong>Ответ:</strong> \(\dfrac{3}{10}\)</p>
+                </div>
+
+                <div class="example">
+                    <h3>Пример 3. Деление дробей</h3>
+                    <p><strong>Задача:</strong> Вычислите \(\dfrac{3}{5} : \dfrac{2}{3}\)</p>
+                    <p><strong>Решение:</strong></p>
+                    <ol>
+                        <li>Переворачиваем вторую дробь: \(\dfrac{2}{3} \rightarrow \dfrac{3}{2}\)</li>
+                        <li>Умножаем: \(\dfrac{3}{5} \cdot \dfrac{3}{2} = \dfrac{3 \cdot 3}{5 \cdot 2} = \dfrac{9}{10}\)</li>
+                    </ol>
+                    <p><strong>Ответ:</strong> \(\dfrac{9}{10}\)</p>
+                </div>
+
+                <div class="example">
+                    <h3>Пример 4. Выделение целой части</h3>
+                    <p><strong>Задача:</strong> Выделите целую часть из дроби \(\dfrac{7}{3}\)</p>
+                    <p><strong>Решение:</strong></p>
+                    <ol>
+                        <li>Делим 7 на 3: получаем 2 (целая часть) и остаток 1</li>
+                        <li>Записываем: \(\dfrac{7}{3} = 2\dfrac{1}{3}\)</li>
+                    </ol>
+                    <p><strong>Ответ:</strong> \(2\dfrac{1}{3}\)</p>
+                </div>
+            </section>
+
+            <!-- РАЗДЕЛ 5: ТЕСТ -->
+            <section id="test" aria-labelledby="test-heading">
+                <h2 id="test-heading">Проверь себя! 🎯</h2>
+                <p>Ответьте на вопросы теста, чтобы проверить свои знания по теме:</p>
+                
+                <form class="quiz" id="quizForm" aria-label="Тест по обыкновенным дробям">
+                    <div class="question">
+                        <p><strong>Вопрос 1.</strong> Какая из дробей является правильной?</p>
+                        <fieldset>
+                            <legend class="visually-hidden">Выберите один вариант ответа</legend>
+                            <label><input type="radio" name="q1" value="a" required> \(\dfrac{7}{5}\)</label><br>
+                            <label><input type="radio" name="q1" value="b"> \(\dfrac{3}{5}\)</label><br>
+                            <label><input type="radio" name="q1" value="c"> \(\dfrac{5}{5}\)</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="question">
+                        <p><strong>Вопрос 2.</strong> Чему равно \(\dfrac{1}{4} + \dfrac{1}{4}\)?</p>
+                        <fieldset>
+                            <legend class="visually-hidden">Выберите один вариант ответа</legend>
+                            <label><input type="radio" name="q2" value="a" required> \(\dfrac{1}{4}\)</label><br>
+                            <label><input type="radio" name="q2" value="b"> \(\dfrac{2}{8}\)</label><br>
+                            <label><input type="radio" name="q2" value="c"> \(\dfrac{1}{2}\)</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="question">
+                        <p><strong>Вопрос 3.</strong> Какое число показывает знаменатель дроби?</p>
+                        <fieldset>
+                            <legend class="visually-hidden">Выберите один вариант ответа</legend>
+                            <label><input type="radio" name="q3" value="a" required> На сколько равных частей разделено целое</label><br>
+                            <label><input type="radio" name="q3" value="b"> Сколько частей взято</label><br>
+                            <label><input type="radio" name="q3" value="c"> Сумму частей</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="question">
+                        <p><strong>Вопрос 4.</strong> Чему равно \(\dfrac{1}{2} \cdot \dfrac{1}{3}\)?</p>
+                        <fieldset>
+                            <legend class="visually-hidden">Выберите один вариант ответа</legend>
+                            <label><input type="radio" name="q4" value="a" required> \(\dfrac{1}{6}\)</label><br>
+                            <label><input type="radio" name="q4" value="b"> \(\dfrac{2}{5}\)</label><br>
+                            <label><input type="radio" name="q4" value="c"> \(\dfrac{2}{3}\)</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="question">
+                        <p><strong>Вопрос 5.</strong> Какое из чисел больше: \(\dfrac{2}{3}\) или \(\dfrac{3}{5}\)?</p>
+                        <fieldset>
+                            <legend class="visually-hidden">Выберите один вариант ответа</legend>
+                            <label><input type="radio" name="q5" value="a" required> \(\dfrac{2}{3}\)</label><br>
+                            <label><input type="radio" name="q5" value="b"> \(\dfrac{3}{5}\)</label><br>
+                            <label><input type="radio" name="q5" value="c"> Они равны</label>
+                        </fieldset>
+                    </div>
+
+                    <button type="button" onclick="checkTest()" aria-label="Проверить ответы на тест">Проверить ответы</button>
+                    <div id="result" role="status" aria-live="polite"></div>
+                </form>
+            </section>
+
+            <!-- РАЗДЕЛ 6: ИНТЕРЕСНЫЕ ФАКТЫ -->
+            <section id="facts" aria-labelledby="facts-heading">
+                <h2 id="facts-heading">Интересные факты о дробях 📚</h2>
+                
+                <div class="fact">
+                    <h3>🏛️ История дробей</h3>
+                    <p>Первые дроби появились в Древнем Египте около 4000 лет назад. Египтяне использовали только дроби с числителем 1 (так называемые «египетские дроби»). Любую другую дробь они записывали как сумму таких дробей. Например, \(\dfrac{2}{3}\) они записывали как \(\dfrac{1}{2} + \dfrac{1}{6}\).</p>
+                </div>
+
+                <div class="fact">
+                    <h3>📜 Дроби в Древней Руси</h3>
+                    <p>В Древней Руси дроби называли «долями» или «ломаными числами». Самые употребительные дроби имели свои специальные названия: \(\dfrac{1}{2}\) — «пол» или «половина», \(\dfrac{1}{4}\) — «четь», \(\dfrac{1}{8}\) — «полчети», \(\dfrac{1}{12}\) — «полполчети». Эти названия сохранились в некоторых русских пословицах и поговорках.</p>
+                </div>
+
+                <div class="fact">
+                    <h3>🔢 Термин «дробь»</h3>
+                    <p>Слово «дробь» появилось в русском языке в XVIII веке. Оно произошло от слова «дробить» — разбивать, раздроблять на части. Термин был введён Леонтием Магницким в его знаменитом учебнике «Арифметика» (1703 год) — первой русской печатной математической книге.</p>
+                </div>
+
+                <div class="fact">
+                    <h3>🧮 Дробь в математике</h3>
+                    <p>Знаменитый математик Леонард Эйлер в XVIII веке ввёл современную запись дробей с помощью горизонтальной черты. До этого дроби записывали по-разному: в Вавилоне — через запятые, в Индии — просто одно число над другим без черты.</p>
+                </div>
+            </section>
+
+            <!-- РАЗДЕЛ 7: ОТЗЫВЫ -->
+            <section id="reviews" aria-labelledby="reviews-heading">
+                <h2 id="reviews-heading">Отзывы и обратная связь 💬</h2>
+                <p>Мы ценим ваше мнение! Поделитесь своими впечатлениями о сайте и помогите нам стать лучше.</p>
+                
+                <form class="review-form" id="reviewForm" aria-label="Форма для оставления отзыва">
+                    <div class="form-group">
+                        <label for="reviewer-name">Ваше имя <span class="required">*</span></label>
+                        <input type="text" id="reviewer-name" name="name" required aria-required="true" placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewer-email">Email <span class="required">*</span></label>
+                        <input type="email" id="reviewer-email" name="email" required aria-required="true" placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-rating">Оценка сайта <span class="required">*</span></label>
+                        <select id="review-rating" name="rating" required aria-required="true">
+                            <option value="">Выберите оценку</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Отлично</option>
+                            <option value="4">⭐⭐⭐⭐ Хорошо</option>
+                            <option value="3">⭐⭐⭐ Нормально</option>
+                            <option value="2">⭐⭐ Плохо</option>
+                            <option value="1">⭐ Очень плохо</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-text">Ваш отзыв <span class="required">*</span></label>
+                        <textarea id="review-text" name="review" rows="5" required aria-required="true" placeholder="Расскажите, что вам понравилось или что можно улучшить..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-topic">Что вас интересует?</label>
+                        <select id="review-topic" name="topic">
+                            <option value="">Выберите тему (необязательно)</option>
+                            <option value="theory">Теория</option>
+                            <option value="examples">Примеры</option>
+                            <option value="test">Тест</option>
+                            <option value="design">Дизайн сайта</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn" aria-label="Отправить отзыв">Отправить отзыв</button>
+                    <div id="review-result" role="status" aria-live="polite"></div>
+                </form>
+
+                <!-- Список отзывов -->
+                <div class="reviews-list" id="reviewsList" aria-label="Список отзывов пользователей">
+                    <h3>Отзывы наших пользователей</h3>
+                    <div id="reviews-container">
+                        <!-- Отзывы будут добавляться сюда через JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p>&copy; 2026 Мой образовательный сайт. Математика для 6 класса. Все права защищены.</p>
+            <p><a href="#intro" class="back-to-top" aria-label="Вернуться к началу страницы">↑ Наверх</a></p>
+        </footer>
+
+    </div> 
+
+    <script>
+        // Функция проверки теста
+        function checkTest() {
+            const answers = {
+                q1: 'b',
+                q2: 'c',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a'
+            };
+            
+            let score = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let q in answers) {
+                const selected = document.querySelector(`input[name="${q}"]:checked`);
+                if (selected && selected.value === answers[q]) {
+                    score++;
+                }
+            }
+            
+            const result = document.getElementById('result');
+            let message = '';
+            
+            if (score === total) {
+                message = `🎉 Отлично! Вы ответили правильно на все ${total} вопросов!`;
+            } else if (score >= 3) {
+                message = `👍 Хороший результат! Правильных ответов: ${score} из ${total}.`;
+            } else {
+                message = `📚 Правильных ответов: ${score} из ${total}. Повторите теорию и попробуйте снова!`;
+            }
+            
+            result.textContent = message;
+            result.style.color = score >= 3 ? '#2b7a62' : '#FF3399';
+            result.style.fontWeight = 'bold';
+        }
+
+        // Обработка формы отзывов
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('reviewer-name').value;
+            const email = document.getElementById('reviewer-email').value;
+            const rating = document.getElementById('review-rating').value;
+            const text = document.getElementById('review-text').value;
+            const topic = document.getElementById('review-topic').value;
+            
+            // Создаем новый отзыв
+            const review = {
+                name: name,
+                email: email,
+                rating: rating,
+                text: text,
+                topic: topic,
+                date: new Date().toLocaleDateString('ru-RU')
+            };
+            
+            // Сохраняем отзыв в localStorage
+            let reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+            reviews.unshift(review);
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+            
+            // Показываем сообщение об успехе
+            const result = document.getElementById('review-result');
+            result.textContent = '✅ Спасибо за ваш отзыв! Он успешно добавлен.';
+            result.style.color = '#2b7a62';
+            result.style.fontWeight = 'bold';
+            
+            // Очищаем форму
+            this.reset();
+            
+            // Обновляем список отзывов
+            displayReviews();
+            
+            // Скрываем сообщение через 5 секунд
+            setTimeout(() => {
+                result.textContent = '';
+            }, 5000);
+        });
+
+        // Функция отображения отзывов
+        function displayReviews() {
+            const container = document.getElementById('reviews-container');
+            const reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+            
+            if (reviews.length === 0) {
+                container.innerHTML = '<p class="no-reviews">Пока нет отзывов. Будьте первым!</p>';
+                return;
+            }
+            
+            container.innerHTML = reviews.map(review => `
+                <article class="review-item" role="article">
+                    <div class="review-header">
+                        <strong class="reviewer-name">${review.name}</strong>
+                        <span class="review-date">${review.date}</span>
+                    </div>
+                    <div class="review-rating">${'⭐'.repeat(review.rating)}</div>
+                    ${review.topic ? `<div class="review-topic">Тема: ${getTopicName(review.topic)}</div>` : ''}
+                    <p class="review-text">${review.text}</p>
+                </article>
+            `).join('');
+        }
+
+        // Функция получения названия темы
+        function getTopicName(topic) {
+            const topics = {
+                'theory': 'Теория',
+                'examples': 'Примеры',
+                'test': 'Тест',
+                'design': 'Дизайн сайта',
+                'other': 'Другое'
+            };
+            return topics[topic] || topic;
+        }
+
+        // Загружаем отзывы при загрузке страницы
+        window.addEventListener('DOMContentLoaded', displayReviews);
+    </script>
+
+</body>
+</html>
